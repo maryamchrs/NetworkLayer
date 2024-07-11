@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B741E1032C40256900C6E055 /* NetworkInterfaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741E1022C40256900C6E055 /* NetworkInterfaceType.swift */; };
+		B741E1072C4025B300C6E055 /* NWInterface.InterfaceType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741E1062C4025B300C6E055 /* NWInterface.InterfaceType+Extension.swift */; };
+		B741E10A2C40260100C6E055 /* NetworkInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741E1092C40260100C6E055 /* NetworkInfoModel.swift */; };
+		B741E10C2C40283300C6E055 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741E10B2C40283300C6E055 /* NetworkManager.swift */; };
 		B7DA33002C3F09FF00593878 /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = B7DA32FF2C3F09FF00593878 /* NetworkLayer.docc */; };
 		B7DA33062C3F09FF00593878 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DA32FB2C3F09FF00593878 /* NetworkLayer.framework */; };
 		B7DA330B2C3F09FF00593878 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA330A2C3F09FF00593878 /* NetworkLayerTests.swift */; };
 		B7DA330C2C3F09FF00593878 /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B7DA32FE2C3F09FF00593878 /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7DA331D2C3F0BFF00593878 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA33182C3F0BFF00593878 /* HTTPClient.swift */; };
+		B7DA331E2C3F0BFF00593878 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA33192C3F0BFF00593878 /* EndPoint.swift */; };
+		B7DA331F2C3F0BFF00593878 /* APIHTTPRequestMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA331A2C3F0BFF00593878 /* APIHTTPRequestMapper.swift */; };
+		B7DA33202C3F0BFF00593878 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA331B2C3F0BFF00593878 /* HTTPMethod.swift */; };
+		B7DA33212C3F0BFF00593878 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA331C2C3F0BFF00593878 /* NetworkError.swift */; };
+		B7DA33232C3F0E4500593878 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA33222C3F0E4500593878 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +34,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B741E1022C40256900C6E055 /* NetworkInterfaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterfaceType.swift; sourceTree = "<group>"; };
+		B741E1062C4025B300C6E055 /* NWInterface.InterfaceType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWInterface.InterfaceType+Extension.swift"; sourceTree = "<group>"; };
+		B741E1092C40260100C6E055 /* NetworkInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfoModel.swift; sourceTree = "<group>"; };
+		B741E10B2C40283300C6E055 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B7DA32FB2C3F09FF00593878 /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DA32FE2C3F09FF00593878 /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
 		B7DA32FF2C3F09FF00593878 /* NetworkLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkLayer.docc; sourceTree = "<group>"; };
 		B7DA33052C3F09FF00593878 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DA330A2C3F09FF00593878 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
+		B7DA33182C3F0BFF00593878 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		B7DA33192C3F0BFF00593878 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		B7DA331A2C3F0BFF00593878 /* APIHTTPRequestMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHTTPRequestMapper.swift; sourceTree = "<group>"; };
+		B7DA331B2C3F0BFF00593878 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B7DA331C2C3F0BFF00593878 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B7DA33222C3F0E4500593878 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +70,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B741E1012C40255700C6E055 /* NetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				B741E1022C40256900C6E055 /* NetworkInterfaceType.swift */,
+				B7DA33222C3F0E4500593878 /* NetworkMonitor.swift */,
+			);
+			path = NetworkMonitor;
+			sourceTree = "<group>";
+		};
+		B741E1042C40258500C6E055 /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				B741E1052C40259C00C6E055 /* Extensions */,
+				B741E1082C4025ED00C6E055 /* Models */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		B741E1052C40259C00C6E055 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B741E1062C4025B300C6E055 /* NWInterface.InterfaceType+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B741E1082C4025ED00C6E055 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B741E1092C40260100C6E055 /* NetworkInfoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B741E10D2C40285A00C6E055 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7DA331A2C3F0BFF00593878 /* APIHTTPRequestMapper.swift */,
+				B7DA33192C3F0BFF00593878 /* EndPoint.swift */,
+				B7DA33182C3F0BFF00593878 /* HTTPClient.swift */,
+				B7DA331B2C3F0BFF00593878 /* HTTPMethod.swift */,
+				B7DA331C2C3F0BFF00593878 /* NetworkError.swift */,
+				B741E10B2C40283300C6E055 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		B7DA32F12C3F09FF00593878 = {
 			isa = PBXGroup;
 			children = (
+				B7DA33172C3F0BE500593878 /* Network */,
 				B7DA32FD2C3F09FF00593878 /* NetworkLayer */,
 				B7DA33092C3F09FF00593878 /* NetworkLayerTests */,
 				B7DA32FC2C3F09FF00593878 /* Products */,
@@ -83,6 +151,16 @@
 				B7DA330A2C3F09FF00593878 /* NetworkLayerTests.swift */,
 			);
 			path = NetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		B7DA33172C3F0BE500593878 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B741E1042C40258500C6E055 /* Commom */,
+				B741E10D2C40285A00C6E055 /* NetworkManager */,
+				B741E1012C40255700C6E055 /* NetworkMonitor */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +272,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B741E1072C4025B300C6E055 /* NWInterface.InterfaceType+Extension.swift in Sources */,
+				B7DA331E2C3F0BFF00593878 /* EndPoint.swift in Sources */,
+				B7DA331F2C3F0BFF00593878 /* APIHTTPRequestMapper.swift in Sources */,
+				B741E1032C40256900C6E055 /* NetworkInterfaceType.swift in Sources */,
+				B741E10C2C40283300C6E055 /* NetworkManager.swift in Sources */,
+				B741E10A2C40260100C6E055 /* NetworkInfoModel.swift in Sources */,
+				B7DA331D2C3F0BFF00593878 /* HTTPClient.swift in Sources */,
+				B7DA33212C3F0BFF00593878 /* NetworkError.swift in Sources */,
+				B7DA33202C3F0BFF00593878 /* HTTPMethod.swift in Sources */,
 				B7DA33002C3F09FF00593878 /* NetworkLayer.docc in Sources */,
+				B7DA33232C3F0E4500593878 /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +443,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +455,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mCh.NetworkLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,6 +477,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +489,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mCh.NetworkLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,6 +501,7 @@
 		B7DA33132C3F09FF00593878 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -420,6 +517,7 @@
 		B7DA33142C3F09FF00593878 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
