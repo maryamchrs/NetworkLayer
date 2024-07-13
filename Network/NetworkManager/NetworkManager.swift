@@ -44,20 +44,30 @@ extension NetworkManager: NetworkManagerProtocol {
             throw error
         }
     }
-
-//    public func request<Response: Decodable>(_ urlRequest: URLRequest) -> AnyPublisher<(Data, HTTPURLResponse), Error> {
-//        do {
-//            httpClient.perform(urlRequest)
-//                .sink { recivedData in
-//                
-//            }
-//            requestMapper.map(data: data.value, response: data.response, isNetworkReachable: isNetworkReachable)
-//        } catch {
-//            // TODO: - Add logic to convert error
-//        }
-//    }
     
-//    public func makeRequest() {
+    public func request<Response: Decodable>(_ urlRequest: URLRequest) -> AnyPublisher<Response, Error> {
+        return httpClient
+            .publisher(urlRequest)
+            .tryMap { [weak self] (data, response) in
+                do {
+                    guard let self else {
+                        throw NetworkError.general
+                    }
+                    let convertedData: Response = try self.requestMapper.map(
+                        data: data,
+                        response: response,
+                        isNetworkReachable: self.isNetworkReachable
+                    )
+                    return convertedData
+                } catch {
+                    // TODO: - Add logic to convert error
+                    throw error
+                }
+            }
+            .eraseToAnyPublisher()
+    }
+    
+    //    public func makeRequest() {
 //        Task {
 //            do {
 //                guard let httpClient, let urlRequest = MockEndpoint.something.urlRequest else { return }

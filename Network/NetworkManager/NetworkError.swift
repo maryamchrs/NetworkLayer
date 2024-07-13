@@ -14,6 +14,7 @@ public enum NetworkError: Error {
     case serverErrror
     case outDated
     case unauthorized
+    case general
 }
 
 extension NetworkError: LocalizedError {
@@ -33,6 +34,8 @@ extension NetworkError: LocalizedError {
             return "out dated"
         case .unauthorized:
             return "User is not authorized"
+        case .general:
+            return "Something went wrong"
         }
     }
 }
