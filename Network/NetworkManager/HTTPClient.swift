@@ -9,7 +9,7 @@ import Combine
 
 public protocol HTTPClient {
     func publisher(_ request: URLRequest) -> AnyPublisher<(Data, HTTPURLResponse), Error>
-    func perform(_ request: URLRequest) async throws -> (Data, URLResponse)
+    func perform(_ request: URLRequest) async throws -> (Data, HTTPURLResponse)
     func perform(_ request: URLRequest) async throws
 }
 
@@ -18,7 +18,11 @@ extension URLSession: HTTPClient {
      This error only use with URLSession so no need to move in outside the extension URLSession
      */
     public struct InvalidHTTPResponseError: Error {}
-    
+    /*
+     TIP:
+     HTTPURLResponse: is a subclass of URLResponse and specifically deals with HTTP responses.
+     It provides additional HTTP-specific information, such as status code, headers, and localized status code string
+     */
     public func publisher(_ request: URLRequest) -> AnyPublisher<(Data, HTTPURLResponse), Error> {
         return dataTaskPublisher(for: request)
             .tryMap({ result in
@@ -30,8 +34,12 @@ extension URLSession: HTTPClient {
             .eraseToAnyPublisher()
     }
     
-    public func perform(_ request: URLRequest) async throws -> (Data, URLResponse) {
-        try await data(for: request)
+    public func perform(_ request: URLRequest) async throws -> (Data, HTTPURLResponse) {
+        let result: (data: Data, response: URLResponse) = try await data(for: request)
+        guard let httpResponse = result.response as? HTTPURLResponse else {
+            throw InvalidHTTPResponseError()
+        }
+        return (result.data, httpResponse)
     }
    
     public func perform(_ request: URLRequest) async throws {

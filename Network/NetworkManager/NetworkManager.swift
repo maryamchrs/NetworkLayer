@@ -6,22 +6,58 @@
 //
 
 import Foundation
+import Combine
 
 public protocol NetworkManagerProtocol: AnyObject {
-    func makeRequest()
+    func request<Response: Decodable>(_ urlRequest: URLRequest) async throws -> Response
 }
 
 public final class NetworkManager {
     
-    private var httpClient: HTTPClient?
+    private var httpClient: HTTPClient
+    private var requestMapper: RequestMapperProtocol
     
-    public init(client: HTTPClient = URLSession.shared) {
+    private let networkMonitor = NetworkMonitor()
+    private var cancellable = Set<AnyCancellable>()
+    
+    var isNetworkReachable: Bool = true
+    
+    public init(client: HTTPClient = URLSession.shared, requestMapper: RequestMapperProtocol = APIHTTPRequestMapper()) {
         self.httpClient = client
+        self.requestMapper = requestMapper
+        observeForConnectivityChanges()
     }
 }
 
 extension NetworkManager: NetworkManagerProtocol {
-    public func makeRequest() {
+    public func request<Response: Decodable>(_ urlRequest: URLRequest) async throws -> Response {
+        do {
+            let data: (value: Data, response: HTTPURLResponse) = try await httpClient.perform(urlRequest)
+            let convertedData: Response = try requestMapper.map(
+                data: data.value,
+                response: data.response,
+                isNetworkReachable: isNetworkReachable
+            )
+            return convertedData
+        } catch {
+            // TODO: - Add logic to convert error
+            throw error
+        }
+    }
+
+//    public func request<Response: Decodable>(_ urlRequest: URLRequest) -> AnyPublisher<(Data, HTTPURLResponse), Error> {
+//        do {
+//            httpClient.perform(urlRequest)
+//                .sink { recivedData in
+//                
+//            }
+//            requestMapper.map(data: data.value, response: data.response, isNetworkReachable: isNetworkReachable)
+//        } catch {
+//            // TODO: - Add logic to convert error
+//        }
+//    }
+    
+//    public func makeRequest() {
 //        Task {
 //            do {
 //                guard let httpClient, let urlRequest = MockEndpoint.something.urlRequest else { return }
@@ -32,11 +68,11 @@ extension NetworkManager: NetworkManagerProtocol {
 //                print(error)
 //            }
 //        }
-    }
+//    }
 }
 
 extension NetworkManager {
-    func makeConfiguration() -> URLSessionConfiguration {
+    private func makeConfiguration() -> URLSessionConfiguration {
         let configuration = URLSessionConfiguration.default
         /*
          A Boolean value that indicates whether connections may use a network interface that the system considers expensive.
@@ -48,5 +84,15 @@ extension NetworkManager {
         configuration.allowsConstrainedNetworkAccess = false
         configuration.waitsForConnectivity = true
         return configuration
+    }
+    
+    /// Start observing the connectivity changes to aware user due to the fact that they need this information.
+    private func observeForConnectivityChanges() {
+        networkMonitor.startMonitoringNetwork()
+            .sink { [weak self] networkInfo in
+                guard let self else { return }
+                self.isNetworkReachable = networkInfo.isActive
+            }
+            .store(in: &cancellable)
     }
 }
