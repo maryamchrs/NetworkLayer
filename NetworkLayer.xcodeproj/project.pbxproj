@@ -21,6 +21,7 @@
 		B7DA33202C3F0BFF00593878 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA331B2C3F0BFF00593878 /* HTTPMethod.swift */; };
 		B7DA33212C3F0BFF00593878 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA331C2C3F0BFF00593878 /* NetworkError.swift */; };
 		B7DA33232C3F0E4500593878 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DA33222C3F0E4500593878 /* NetworkMonitor.swift */; };
+		B7DB04A02C452F77009ABB30 /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DB049F2C452F77009ABB30 /* ErrorMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B7DA331B2C3F0BFF00593878 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		B7DA331C2C3F0BFF00593878 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B7DA33222C3F0E4500593878 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		B7DB049F2C452F77009ABB30 /* ErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				B7DA331B2C3F0BFF00593878 /* HTTPMethod.swift */,
 				B7DA331C2C3F0BFF00593878 /* NetworkError.swift */,
 				B741E10B2C40283300C6E055 /* NetworkManager.swift */,
+				B7DB049F2C452F77009ABB30 /* ErrorMapper.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				B7DA33202C3F0BFF00593878 /* HTTPMethod.swift in Sources */,
 				B7DA33002C3F09FF00593878 /* NetworkLayer.docc in Sources */,
 				B7DA33232C3F0E4500593878 /* NetworkMonitor.swift in Sources */,
+				B7DB04A02C452F77009ABB30 /* ErrorMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
