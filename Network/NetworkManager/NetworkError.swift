@@ -11,9 +11,10 @@ public enum NetworkError: Error {
     case unableToDecode
     case URLSessionError(String)
     case networkConnectionError
-    case serverErrror
+    case serverError
     case outDated
     case unauthorized
+    case notAcceptedStatusCode(Int)
     case general
 }
 
@@ -28,12 +29,14 @@ extension NetworkError: LocalizedError {
             return model
         case .networkConnectionError:
             return "some problem occured in connection"
-        case .serverErrror:
+        case .serverError:
             return "some problem occured in server"
         case .outDated:
             return "out dated"
         case .unauthorized:
             return "User is not authorized"
+        case .notAcceptedStatusCode(let statusCode):
+            return "Response Status code is \(statusCode)"
         case .general:
             return "Something went wrong"
         }

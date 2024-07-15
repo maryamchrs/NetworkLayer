@@ -7,38 +7,21 @@
 import Foundation
 
 public protocol RequestMapperProtocol: AnyObject {
-    func map<T>(data: Data, response: HTTPURLResponse, isNetworkReachable: Bool) throws -> T where T: Decodable
+    func map<T>(data: Data, response: HTTPURLResponse) throws -> T where T: Decodable
 }
 
 public class APIHTTPRequestMapper: RequestMapperProtocol {
     
     public init() {}
     
-    /*
-     With this map you are able to make some generic decision.
-     for instance if you want you can deal with server in case they send 401 you navigate the user to the ogin and authorize again.
-     You can have a lot more for every single status code.
-     */
-    public func map<T>(data: Data,
-                       response: HTTPURLResponse,
-                       isNetworkReachable: Bool) throws -> T where T: Decodable {
-        if (200..<300) ~= response.statusCode {
-            return try JSONDecoder().decode(T.self, from: data)
-        } else {
-            throw mapError(response, isNetworkReachable: isNetworkReachable)
+    public func map<T>(data: Data, response: HTTPURLResponse) throws -> T where T: Decodable {
+        guard (200..<300).contains(response.statusCode) else {
+            throw NetworkError.notAcceptedStatusCode(response.statusCode)
         }
-    }
-}
-
-extension APIHTTPRequestMapper {
-    
-    private func mapError(_ response: HTTPURLResponse, isNetworkReachable: Bool) -> Error {
-        if response.statusCode == 401 {
-            return NetworkError.unauthorized
-        } else if !isNetworkReachable {
-            return NetworkError.networkConnectionError
-        } else {
-            return NetworkError.serverErrror
+        do {
+            return try JSONDecoder().decode(T.self, from: data)
+        } catch {
+            throw NetworkError.unableToDecode
         }
     }
 }

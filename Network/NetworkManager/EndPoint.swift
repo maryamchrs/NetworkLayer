@@ -17,21 +17,16 @@ public protocol EndPoint {
     var httpHeaders: [String: String]? { get }
     
     var allHeaders: [String: String] { get }
-        
+    
     var httpBody: Encodable? { get }
 }
 
-extension EndPoint {
-    public var allHeaders: [String: String] {
+public extension EndPoint {
+    var allHeaders: [String: String] {
         defaultHeaders.merging(httpHeaders ?? [:]) { (_, new) in new }
     }
     
-    private var defaultHeaders: [String: String] {
-        ["Content-Type": "application/json",
-         "Accept": "application/json"]
-    }
-    
-    public var urlRequest: URLRequest? {
+    var urlRequest: URLRequest? {
         guard let url = URL(string: baseURL + path) else { return nil }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = httpMethod.rawValue
@@ -45,5 +40,12 @@ extension EndPoint {
             urlRequest.addValue($1, forHTTPHeaderField: $0)
         })
         return urlRequest
+    }
+}
+
+extension EndPoint {
+    private var defaultHeaders: [String: String] {
+        ["Content-Type": "application/json",
+         "Accept": "application/json"]
     }
 }

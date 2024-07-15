@@ -9,76 +9,81 @@ import Foundation
 import Combine
 
 public protocol NetworkManagerProtocol: AnyObject {
+    var isNetworkReachable: Bool { get }
+    
     func request<Response: Decodable>(_ urlRequest: URLRequest) async throws -> Response
+    func request<Response: Decodable>(_ urlRequest: URLRequest) -> AnyPublisher<Response, Error>
 }
 
 public final class NetworkManager {
     
+    // MARK: - Properties and Constants
+    // MARK: Public
+    public var isNetworkReachable: Bool = true
+    
+    // MARK: Private
     private var httpClient: HTTPClient
     private var requestMapper: RequestMapperProtocol
+    private let errorMepper: ErrorMapperProtocol
     
     private let networkMonitor = NetworkMonitor()
     private var cancellable = Set<AnyCancellable>()
     
-    var isNetworkReachable: Bool = true
-    
-    public init(client: HTTPClient = URLSession.shared, requestMapper: RequestMapperProtocol = APIHTTPRequestMapper()) {
+    public init(
+        client: HTTPClient = URLSession.shared,
+        requestMapper: RequestMapperProtocol = APIHTTPRequestMapper(),
+        errorMepper: ErrorMapperProtocol = ErrorMapper()
+    ) {
         self.httpClient = client
         self.requestMapper = requestMapper
+        self.errorMepper = errorMepper
         observeForConnectivityChanges()
     }
 }
 
 extension NetworkManager: NetworkManagerProtocol {
     public func request<Response: Decodable>(_ urlRequest: URLRequest) async throws -> Response {
+        var response: HTTPURLResponse?
         do {
             let data: (value: Data, response: HTTPURLResponse) = try await httpClient.perform(urlRequest)
+            response = data.response
             let convertedData: Response = try requestMapper.map(
                 data: data.value,
-                response: data.response,
-                isNetworkReachable: isNetworkReachable
+                response: data.response
             )
             return convertedData
         } catch {
-            // TODO: - Add logic to convert error
-            throw error
+            throw errorMepper.map(
+                error: error,
+                response: response,
+                isNetworkReachable: isNetworkReachable
+            )
         }
     }
     
     public func request<Response: Decodable>(_ urlRequest: URLRequest) -> AnyPublisher<Response, Error> {
         return httpClient
             .publisher(urlRequest)
-            .tryMap { [weak self] (data, response) in
+            .tryMap { [weak self] (data, httpURLResponse) in
+                guard let self else {
+                    throw NetworkError.general
+                }
                 do {
-                    guard let self else {
-                        throw NetworkError.general
-                    }
                     let convertedData: Response = try self.requestMapper.map(
                         data: data,
-                        response: response,
-                        isNetworkReachable: self.isNetworkReachable
+                        response: httpURLResponse
                     )
                     return convertedData
                 } catch {
-                    // TODO: - Add logic to convert error
-                    throw error
+                    throw errorMepper.map(
+                        error: error,
+                        response: httpURLResponse,
+                        isNetworkReachable: self.isNetworkReachable
+                    )
                 }
             }
             .eraseToAnyPublisher()
     }
-    
-    //    public func makeRequest() {
-//        Task {
-//            do {
-//                guard let httpClient, let urlRequest = MockEndpoint.something.urlRequest else { return }
-//                let data: (Data, URLResponse) = try await httpClient.perform(urlRequest)//.perform(urlRequest)
-//                print(data)
-//            }
-//            catch {
-//                print(error)
-//            }
-//        }
-//    }
 }
 
 extension NetworkManager {
