@@ -27,6 +27,10 @@ public class ErrorMapper: ErrorMapperProtocol {
             switch response.statusCode {
             case 401:
                 return NetworkError.unauthorized
+            case 403:
+                return NetworkError.forbidden
+            case 404:
+                return NetworkError.notFound
             case 500..<600:
                 return NetworkError.serverError
             default:

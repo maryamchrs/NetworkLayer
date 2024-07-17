@@ -14,6 +14,8 @@ public enum NetworkError: Error {
     case serverError
     case outDated
     case unauthorized
+    case forbidden
+    case notFound
     case notAcceptedStatusCode(Int)
     case general
 }
@@ -35,6 +37,10 @@ extension NetworkError: LocalizedError {
             return "out dated"
         case .unauthorized:
             return "User is not authorized"
+        case .forbidden:
+            return "Request is forbidden"
+        case .notFound:
+            return "not found"
         case .notAcceptedStatusCode(let statusCode):
             return "Response Status code is \(statusCode)"
         case .general:

@@ -19,16 +19,27 @@ public protocol EndPoint {
     var allHeaders: [String: String] { get }
     
     var httpBody: Encodable? { get }
+    
+    var timeoutInterval: TimeInterval { get }
+    
+     var cachePolicy: URLRequest.CachePolicy { get }
 }
 
 public extension EndPoint {
+    
+    var timeoutInterval: TimeInterval { 60 }
+    
+    var cachePolicy: URLRequest.CachePolicy { .returnCacheDataElseLoad }
+    
     var allHeaders: [String: String] {
         defaultHeaders.merging(httpHeaders ?? [:]) { (_, new) in new }
     }
     
     var urlRequest: URLRequest? {
         guard let url = URL(string: baseURL + path) else { return nil }
-        var urlRequest = URLRequest(url: url)
+        var urlRequest = URLRequest(url: url, 
+                                    cachePolicy: cachePolicy, 
+                                    timeoutInterval: timeoutInterval)
         urlRequest.httpMethod = httpMethod.rawValue
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase

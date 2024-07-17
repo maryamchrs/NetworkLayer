@@ -87,8 +87,15 @@ extension NetworkManager: NetworkManagerProtocol {
 }
 
 extension NetworkManager {
-    private func makeConfiguration() -> URLSessionConfiguration {
+    
+    private func makeConfiguration(
+        timeout: TimeInterval,
+        cachePolicy: URLRequest.CachePolicy
+    ) -> URLSessionConfiguration {
         let configuration = URLSessionConfiguration.default
+        
+        configuration.timeoutIntervalForRequest = timeout
+        configuration.timeoutIntervalForResource = timeout
         /*
          A Boolean value that indicates whether connections may use a network interface that the system considers expensive.
          */
@@ -98,6 +105,9 @@ extension NetworkManager {
          */
         configuration.allowsConstrainedNetworkAccess = false
         configuration.waitsForConnectivity = true
+        
+        configuration.requestCachePolicy = cachePolicy
+        
         return configuration
     }
     
