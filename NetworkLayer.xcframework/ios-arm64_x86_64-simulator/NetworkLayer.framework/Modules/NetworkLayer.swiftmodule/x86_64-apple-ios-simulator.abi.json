@@ -1,0 +1,3877 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EndPoint",
+        "printedName": "EndPoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointP7baseURLSSvp",
+            "mangledName": "$s12NetworkLayer8EndPointP7baseURLSSvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointP7baseURLSSvg",
+                "mangledName": "$s12NetworkLayer8EndPointP7baseURLSSvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointP4pathSSvp",
+            "mangledName": "$s12NetworkLayer8EndPointP4pathSSvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointP4pathSSvg",
+                "mangledName": "$s12NetworkLayer8EndPointP4pathSSvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpMethod",
+            "printedName": "httpMethod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPMethod",
+                "printedName": "NetworkLayer.HTTPMethod",
+                "usr": "s:12NetworkLayer10HTTPMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointP10httpMethodAA10HTTPMethodOvp",
+            "mangledName": "$s12NetworkLayer8EndPointP10httpMethodAA10HTTPMethodOvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkLayer.HTTPMethod",
+                    "usr": "s:12NetworkLayer10HTTPMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointP10httpMethodAA10HTTPMethodOvg",
+                "mangledName": "$s12NetworkLayer8EndPointP10httpMethodAA10HTTPMethodOvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpHeaders",
+            "printedName": "httpHeaders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointP11httpHeadersSDyS2SGSgvp",
+            "mangledName": "$s12NetworkLayer8EndPointP11httpHeadersSDyS2SGSgvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointP11httpHeadersSDyS2SGSgvg",
+                "mangledName": "$s12NetworkLayer8EndPointP11httpHeadersSDyS2SGSgvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allHeaders",
+            "printedName": "allHeaders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointP10allHeadersSDyS2SGvp",
+            "mangledName": "$s12NetworkLayer8EndPointP10allHeadersSDyS2SGvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointP10allHeadersSDyS2SGvg",
+                "mangledName": "$s12NetworkLayer8EndPointP10allHeadersSDyS2SGvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpBody",
+            "printedName": "httpBody",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Encodable?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encodable",
+                    "printedName": "Swift.Encodable",
+                    "usr": "s:SE"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointP8httpBodySE_pSgvp",
+            "mangledName": "$s12NetworkLayer8EndPointP8httpBodySE_pSgvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Encodable?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointP8httpBodySE_pSgvg",
+                "mangledName": "$s12NetworkLayer8EndPointP8httpBodySE_pSgvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutInterval",
+            "printedName": "timeoutInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointP15timeoutIntervalSdvp",
+            "mangledName": "$s12NetworkLayer8EndPointP15timeoutIntervalSdvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointP15timeoutIntervalSdvg",
+                "mangledName": "$s12NetworkLayer8EndPointP15timeoutIntervalSdvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cachePolicy",
+            "printedName": "cachePolicy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CachePolicy",
+                "printedName": "Foundation.NSURLRequest.CachePolicy",
+                "usr": "c:@E@NSURLRequestCachePolicy"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointP11cachePolicySo017NSURLRequestCacheF0Vvp",
+            "mangledName": "$s12NetworkLayer8EndPointP11cachePolicySo017NSURLRequestCacheF0Vvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CachePolicy",
+                    "printedName": "Foundation.NSURLRequest.CachePolicy",
+                    "usr": "c:@E@NSURLRequestCachePolicy"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointP11cachePolicySo017NSURLRequestCacheF0Vvg",
+                "mangledName": "$s12NetworkLayer8EndPointP11cachePolicySo017NSURLRequestCacheF0Vvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeoutInterval",
+            "printedName": "timeoutInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointPAAE15timeoutIntervalSdvp",
+            "mangledName": "$s12NetworkLayer8EndPointPAAE15timeoutIntervalSdvp",
+            "moduleName": "NetworkLayer",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointPAAE15timeoutIntervalSdvg",
+                "mangledName": "$s12NetworkLayer8EndPointPAAE15timeoutIntervalSdvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cachePolicy",
+            "printedName": "cachePolicy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CachePolicy",
+                "printedName": "Foundation.NSURLRequest.CachePolicy",
+                "usr": "c:@E@NSURLRequestCachePolicy"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointPAAE11cachePolicySo017NSURLRequestCacheF0Vvp",
+            "mangledName": "$s12NetworkLayer8EndPointPAAE11cachePolicySo017NSURLRequestCacheF0Vvp",
+            "moduleName": "NetworkLayer",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CachePolicy",
+                    "printedName": "Foundation.NSURLRequest.CachePolicy",
+                    "usr": "c:@E@NSURLRequestCachePolicy"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointPAAE11cachePolicySo017NSURLRequestCacheF0Vvg",
+                "mangledName": "$s12NetworkLayer8EndPointPAAE11cachePolicySo017NSURLRequestCacheF0Vvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allHeaders",
+            "printedName": "allHeaders",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointPAAE10allHeadersSDyS2SGvp",
+            "mangledName": "$s12NetworkLayer8EndPointPAAE10allHeadersSDyS2SGvp",
+            "moduleName": "NetworkLayer",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointPAAE10allHeadersSDyS2SGvg",
+                "mangledName": "$s12NetworkLayer8EndPointPAAE10allHeadersSDyS2SGvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "urlRequest",
+            "printedName": "urlRequest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLRequest?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLRequest",
+                    "printedName": "Foundation.URLRequest",
+                    "usr": "s:10Foundation10URLRequestV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer8EndPointPAAE10urlRequest10Foundation10URLRequestVSgvp",
+            "mangledName": "$s12NetworkLayer8EndPointPAAE10urlRequest10Foundation10URLRequestVSgvp",
+            "moduleName": "NetworkLayer",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URLRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer8EndPointPAAE10urlRequest10Foundation10URLRequestVSgvg",
+                "mangledName": "$s12NetworkLayer8EndPointPAAE10urlRequest10Foundation10URLRequestVSgvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.EndPoint>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.EndPoint>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NetworkLayer8EndPointP",
+        "mangledName": "$s12NetworkLayer8EndPointP",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RequestMapperProtocol",
+        "printedName": "RequestMapperProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "jsonDecoder",
+            "printedName": "jsonDecoder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSONDecoder",
+                "printedName": "Foundation.JSONDecoder",
+                "usr": "s:10Foundation11JSONDecoderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer21RequestMapperProtocolP11jsonDecoder10Foundation11JSONDecoderCvp",
+            "mangledName": "$s12NetworkLayer21RequestMapperProtocolP11jsonDecoder10Foundation11JSONDecoderCvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer21RequestMapperProtocolP11jsonDecoder10Foundation11JSONDecoderCvg",
+                "mangledName": "$s12NetworkLayer21RequestMapperProtocolP11jsonDecoder10Foundation11JSONDecoderCvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.RequestMapperProtocol>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.RequestMapperProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer21RequestMapperProtocolP11jsonDecoder10Foundation11JSONDecoderCvs",
+                "mangledName": "$s12NetworkLayer21RequestMapperProtocolP11jsonDecoder10Foundation11JSONDecoderCvs",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.RequestMapperProtocol>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.RequestMapperProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer21RequestMapperProtocolP11jsonDecoder10Foundation11JSONDecoderCvM",
+                "mangledName": "$s12NetworkLayer21RequestMapperProtocolP11jsonDecoder10Foundation11JSONDecoderCvM",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.RequestMapperProtocol>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.RequestMapperProtocol>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "map",
+            "printedName": "map(data:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPURLResponse",
+                "printedName": "Foundation.HTTPURLResponse",
+                "usr": "c:objc(cs)NSHTTPURLResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer21RequestMapperProtocolP3map4data8responseqd__10Foundation4DataV_So17NSHTTPURLResponseCtKSeRd__lF",
+            "mangledName": "$s12NetworkLayer21RequestMapperProtocolP3map4data8responseqd__10Foundation4DataV_So17NSHTTPURLResponseCtKSeRd__lF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NetworkLayer.RequestMapperProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, T where Self : NetworkLayer.RequestMapperProtocol, T : Swift.Decodable>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NetworkLayer21RequestMapperProtocolP",
+        "mangledName": "$s12NetworkLayer21RequestMapperProtocolP",
+        "moduleName": "NetworkLayer",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIHTTPRequestMapper",
+        "printedName": "APIHTTPRequestMapper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "jsonDecoder",
+            "printedName": "jsonDecoder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSONDecoder",
+                "printedName": "Foundation.JSONDecoder",
+                "usr": "s:10Foundation11JSONDecoderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer20APIHTTPRequestMapperC11jsonDecoder10Foundation11JSONDecoderCvp",
+            "mangledName": "$s12NetworkLayer20APIHTTPRequestMapperC11jsonDecoder10Foundation11JSONDecoderCvp",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer20APIHTTPRequestMapperC11jsonDecoder10Foundation11JSONDecoderCvg",
+                "mangledName": "$s12NetworkLayer20APIHTTPRequestMapperC11jsonDecoder10Foundation11JSONDecoderCvg",
+                "moduleName": "NetworkLayer",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer20APIHTTPRequestMapperC11jsonDecoder10Foundation11JSONDecoderCvs",
+                "mangledName": "$s12NetworkLayer20APIHTTPRequestMapperC11jsonDecoder10Foundation11JSONDecoderCvs",
+                "moduleName": "NetworkLayer",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer20APIHTTPRequestMapperC11jsonDecoder10Foundation11JSONDecoderCvM",
+                "mangledName": "$s12NetworkLayer20APIHTTPRequestMapperC11jsonDecoder10Foundation11JSONDecoderCvM",
+                "moduleName": "NetworkLayer",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(jsonDecoder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIHTTPRequestMapper",
+                "printedName": "NetworkLayer.APIHTTPRequestMapper",
+                "usr": "s:12NetworkLayer20APIHTTPRequestMapperC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JSONDecoder",
+                "printedName": "Foundation.JSONDecoder",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation11JSONDecoderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkLayer20APIHTTPRequestMapperC11jsonDecoderAC10Foundation11JSONDecoderC_tcfc",
+            "mangledName": "$s12NetworkLayer20APIHTTPRequestMapperC11jsonDecoderAC10Foundation11JSONDecoderC_tcfc",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "map",
+            "printedName": "map(data:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPURLResponse",
+                "printedName": "Foundation.HTTPURLResponse",
+                "usr": "c:objc(cs)NSHTTPURLResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer20APIHTTPRequestMapperC3map4data8responsex10Foundation4DataV_So17NSHTTPURLResponseCtKSeRzlF",
+            "mangledName": "$s12NetworkLayer20APIHTTPRequestMapperC3map4data8responsex10Foundation4DataV_So17NSHTTPURLResponseCtKSeRzlF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NetworkLayer20APIHTTPRequestMapperC",
+        "mangledName": "$s12NetworkLayer20APIHTTPRequestMapperC",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RequestMapperProtocol",
+            "printedName": "RequestMapperProtocol",
+            "usr": "s:12NetworkLayer21RequestMapperProtocolP",
+            "mangledName": "$s12NetworkLayer21RequestMapperProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkInterfaceType",
+        "printedName": "NetworkInterfaceType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "other",
+            "printedName": "other",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkInterfaceType.Type) -> NetworkLayer.NetworkInterfaceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInterfaceType",
+                    "printedName": "NetworkLayer.NetworkInterfaceType",
+                    "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkInterfaceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkInterfaceType",
+                        "printedName": "NetworkLayer.NetworkInterfaceType",
+                        "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A13InterfaceTypeO5otheryA2CmF",
+            "mangledName": "$s12NetworkLayer0A13InterfaceTypeO5otheryA2CmF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wifi",
+            "printedName": "wifi",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkInterfaceType.Type) -> NetworkLayer.NetworkInterfaceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInterfaceType",
+                    "printedName": "NetworkLayer.NetworkInterfaceType",
+                    "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkInterfaceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkInterfaceType",
+                        "printedName": "NetworkLayer.NetworkInterfaceType",
+                        "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A13InterfaceTypeO4wifiyA2CmF",
+            "mangledName": "$s12NetworkLayer0A13InterfaceTypeO4wifiyA2CmF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cellular",
+            "printedName": "cellular",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkInterfaceType.Type) -> NetworkLayer.NetworkInterfaceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInterfaceType",
+                    "printedName": "NetworkLayer.NetworkInterfaceType",
+                    "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkInterfaceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkInterfaceType",
+                        "printedName": "NetworkLayer.NetworkInterfaceType",
+                        "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A13InterfaceTypeO8cellularyA2CmF",
+            "mangledName": "$s12NetworkLayer0A13InterfaceTypeO8cellularyA2CmF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wiredEthernet",
+            "printedName": "wiredEthernet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkInterfaceType.Type) -> NetworkLayer.NetworkInterfaceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInterfaceType",
+                    "printedName": "NetworkLayer.NetworkInterfaceType",
+                    "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkInterfaceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkInterfaceType",
+                        "printedName": "NetworkLayer.NetworkInterfaceType",
+                        "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A13InterfaceTypeO13wiredEthernetyA2CmF",
+            "mangledName": "$s12NetworkLayer0A13InterfaceTypeO13wiredEthernetyA2CmF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loopback",
+            "printedName": "loopback",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkInterfaceType.Type) -> NetworkLayer.NetworkInterfaceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInterfaceType",
+                    "printedName": "NetworkLayer.NetworkInterfaceType",
+                    "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkInterfaceType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkInterfaceType",
+                        "printedName": "NetworkLayer.NetworkInterfaceType",
+                        "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A13InterfaceTypeO8loopbackyA2CmF",
+            "mangledName": "$s12NetworkLayer0A13InterfaceTypeO8loopbackyA2CmF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkInterfaceType",
+                "printedName": "NetworkLayer.NetworkInterfaceType",
+                "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkInterfaceType",
+                "printedName": "NetworkLayer.NetworkInterfaceType",
+                "usr": "s:12NetworkLayer0A13InterfaceTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A13InterfaceTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12NetworkLayer0A13InterfaceTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "NetworkLayer",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer0A13InterfaceTypeO9hashValueSivp",
+            "mangledName": "$s12NetworkLayer0A13InterfaceTypeO9hashValueSivp",
+            "moduleName": "NetworkLayer",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer0A13InterfaceTypeO9hashValueSivg",
+                "mangledName": "$s12NetworkLayer0A13InterfaceTypeO9hashValueSivg",
+                "moduleName": "NetworkLayer",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A13InterfaceTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12NetworkLayer0A13InterfaceTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "NetworkLayer",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12NetworkLayer0A13InterfaceTypeO",
+        "mangledName": "$s12NetworkLayer0A13InterfaceTypeO",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkManagerProtocol",
+        "printedName": "NetworkManagerProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isNetworkReachable",
+            "printedName": "isNetworkReachable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer0A15ManagerProtocolP02isA9ReachableSbvp",
+            "mangledName": "$s12NetworkLayer0A15ManagerProtocolP02isA9ReachableSbvp",
+            "moduleName": "NetworkLayer",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer0A15ManagerProtocolP02isA9ReachableSbvg",
+                "mangledName": "$s12NetworkLayer0A15ManagerProtocolP02isA9ReachableSbvg",
+                "moduleName": "NetworkLayer",
+                "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.NetworkManagerProtocol>",
+                "sugared_genericSig": "<Self where Self : NetworkLayer.NetworkManagerProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A15ManagerProtocolP7requestyqd__10Foundation10URLRequestVYaKSeRd__lF",
+            "mangledName": "$s12NetworkLayer0A15ManagerProtocolP7requestyqd__10Foundation10URLRequestVYaKSeRd__lF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NetworkLayer.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, Response where Self : NetworkLayer.NetworkManagerProtocol, Response : Swift.Decodable>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_1_0, Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A15ManagerProtocolP7requesty7Combine12AnyPublisherVyqd__s5Error_pG10Foundation10URLRequestVSeRd__lF",
+            "mangledName": "$s12NetworkLayer0A15ManagerProtocolP7requesty7Combine12AnyPublisherVyqd__s5Error_pG10Foundation10URLRequestVSeRd__lF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : NetworkLayer.NetworkManagerProtocol, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, Response where Self : NetworkLayer.NetworkManagerProtocol, Response : Swift.Decodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NetworkLayer0A15ManagerProtocolP",
+        "mangledName": "$s12NetworkLayer0A15ManagerProtocolP",
+        "moduleName": "NetworkLayer",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkManager",
+        "printedName": "NetworkManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isNetworkReachable",
+            "printedName": "isNetworkReachable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer0A7ManagerC02isA9ReachableSbvp",
+            "mangledName": "$s12NetworkLayer0A7ManagerC02isA9ReachableSbvp",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer0A7ManagerC02isA9ReachableSbvg",
+                "mangledName": "$s12NetworkLayer0A7ManagerC02isA9ReachableSbvg",
+                "moduleName": "NetworkLayer",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer0A7ManagerC02isA9ReachableSbvs",
+                "mangledName": "$s12NetworkLayer0A7ManagerC02isA9ReachableSbvs",
+                "moduleName": "NetworkLayer",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer0A7ManagerC02isA9ReachableSbvM",
+                "mangledName": "$s12NetworkLayer0A7ManagerC02isA9ReachableSbvM",
+                "moduleName": "NetworkLayer",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(client:requestMapper:errorMepper:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkManager",
+                "printedName": "NetworkLayer.NetworkManager",
+                "usr": "s:12NetworkLayer0A7ManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPClient",
+                "printedName": "NetworkLayer.HTTPClient",
+                "hasDefaultArg": true,
+                "usr": "s:12NetworkLayer10HTTPClientP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RequestMapperProtocol",
+                "printedName": "NetworkLayer.RequestMapperProtocol",
+                "hasDefaultArg": true,
+                "usr": "s:12NetworkLayer21RequestMapperProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ErrorMapperProtocol",
+                "printedName": "NetworkLayer.ErrorMapperProtocol",
+                "hasDefaultArg": true,
+                "usr": "s:12NetworkLayer19ErrorMapperProtocolP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkLayer0A7ManagerC6client13requestMapper11errorMepperAcA10HTTPClient_p_AA07RequestF8Protocol_pAA05ErrorfK0_ptcfc",
+            "mangledName": "$s12NetworkLayer0A7ManagerC6client13requestMapper11errorMepperAcA10HTTPClient_p_AA07RequestF8Protocol_pAA05ErrorfK0_ptcfc",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A7ManagerC7requestyx10Foundation10URLRequestVYaKSeRzlF",
+            "mangledName": "$s12NetworkLayer0A7ManagerC7requestyx10Foundation10URLRequestVYaKSeRzlF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Response where Response : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<τ_0_0, Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A7ManagerC7requesty7Combine12AnyPublisherVyxs5Error_pG10Foundation10URLRequestVSeRzlF",
+            "mangledName": "$s12NetworkLayer0A7ManagerC7requesty7Combine12AnyPublisherVyxs5Error_pG10Foundation10URLRequestVSeRzlF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Response where Response : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NetworkLayer0A7ManagerC",
+        "mangledName": "$s12NetworkLayer0A7ManagerC",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NetworkManagerProtocol",
+            "printedName": "NetworkManagerProtocol",
+            "usr": "s:12NetworkLayer0A15ManagerProtocolP",
+            "mangledName": "$s12NetworkLayer0A15ManagerProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkInfoModel",
+        "printedName": "NetworkInfoModel",
+        "declKind": "Struct",
+        "usr": "s:12NetworkLayer0A9InfoModelV",
+        "mangledName": "$s12NetworkLayer0A9InfoModelV",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPClient",
+        "printedName": "HTTPClient",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "publisher",
+            "printedName": "publisher(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(Foundation.Data, Foundation.HTTPURLResponse), Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data, Foundation.HTTPURLResponse)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPURLResponse",
+                        "printedName": "Foundation.HTTPURLResponse",
+                        "usr": "c:objc(cs)NSHTTPURLResponse"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer10HTTPClientP9publishery7Combine12AnyPublisherVy10Foundation4DataV_So17NSHTTPURLResponseCts5Error_pGAH10URLRequestVF",
+            "mangledName": "$s12NetworkLayer10HTTPClientP9publishery7Combine12AnyPublisherVy10Foundation4DataV_So17NSHTTPURLResponseCts5Error_pGAH10URLRequestVF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.HTTPClient>",
+            "sugared_genericSig": "<Self where Self : NetworkLayer.HTTPClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "perform",
+            "printedName": "perform(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.HTTPURLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer10HTTPClientP7performy10Foundation4DataV_So17NSHTTPURLResponseCtAE10URLRequestVYaKF",
+            "mangledName": "$s12NetworkLayer10HTTPClientP7performy10Foundation4DataV_So17NSHTTPURLResponseCtAE10URLRequestVYaKF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.HTTPClient>",
+            "sugared_genericSig": "<Self where Self : NetworkLayer.HTTPClient>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "perform",
+            "printedName": "perform(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer10HTTPClientP7performyy10Foundation10URLRequestVYaKF",
+            "mangledName": "$s12NetworkLayer10HTTPClientP7performyy10Foundation10URLRequestVYaKF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.HTTPClient>",
+            "sugared_genericSig": "<Self where Self : NetworkLayer.HTTPClient>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NetworkLayer10HTTPClientP",
+        "mangledName": "$s12NetworkLayer10HTTPClientP",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "noData",
+            "printedName": "noData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO6noDatayA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO6noDatayA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToDecode",
+            "printedName": "unableToDecode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO14unableToDecodeyA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO14unableToDecodeyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "URLSessionError",
+            "printedName": "URLSessionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> (Swift.String) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> NetworkLayer.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO010URLSessionC0yACSScACmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO010URLSessionC0yACSScACmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "networkConnectionError",
+            "printedName": "networkConnectionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO017networkConnectionC0yA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO017networkConnectionC0yA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO06serverC0yA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO06serverC0yA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "outDated",
+            "printedName": "outDated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO8outDatedyA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO8outDatedyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "unauthorized",
+            "printedName": "unauthorized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO12unauthorizedyA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO12unauthorizedyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "forbidden",
+            "printedName": "forbidden",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO9forbiddenyA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO9forbiddenyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "notFound",
+            "printedName": "notFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO8notFoundyA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO8notFoundyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "notAcceptedStatusCode",
+            "printedName": "notAcceptedStatusCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> (Swift.Int) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> NetworkLayer.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO21notAcceptedStatusCodeyACSicACmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO21notAcceptedStatusCodeyACSicACmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "general",
+            "printedName": "general",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.NetworkError.Type) -> NetworkLayer.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkLayer.NetworkError",
+                    "usr": "s:12NetworkLayer0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkLayer.NetworkError",
+                        "usr": "s:12NetworkLayer0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer0A5ErrorO7generalyA2CmF",
+            "mangledName": "$s12NetworkLayer0A5ErrorO7generalyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer0A5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s12NetworkLayer0A5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer0A5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s12NetworkLayer0A5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "NetworkLayer",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12NetworkLayer0A5ErrorO",
+        "mangledName": "$s12NetworkLayer0A5ErrorO",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPMethod",
+        "printedName": "HTTPMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.HTTPMethod.Type) -> NetworkLayer.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkLayer.HTTPMethod",
+                    "usr": "s:12NetworkLayer10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkLayer.HTTPMethod",
+                        "usr": "s:12NetworkLayer10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer10HTTPMethodO3getyA2CmF",
+            "mangledName": "$s12NetworkLayer10HTTPMethodO3getyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.HTTPMethod.Type) -> NetworkLayer.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkLayer.HTTPMethod",
+                    "usr": "s:12NetworkLayer10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkLayer.HTTPMethod",
+                        "usr": "s:12NetworkLayer10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer10HTTPMethodO4postyA2CmF",
+            "mangledName": "$s12NetworkLayer10HTTPMethodO4postyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "put",
+            "printedName": "put",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.HTTPMethod.Type) -> NetworkLayer.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkLayer.HTTPMethod",
+                    "usr": "s:12NetworkLayer10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkLayer.HTTPMethod",
+                        "usr": "s:12NetworkLayer10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer10HTTPMethodO3putyA2CmF",
+            "mangledName": "$s12NetworkLayer10HTTPMethodO3putyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "patch",
+            "printedName": "patch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.HTTPMethod.Type) -> NetworkLayer.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkLayer.HTTPMethod",
+                    "usr": "s:12NetworkLayer10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkLayer.HTTPMethod",
+                        "usr": "s:12NetworkLayer10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer10HTTPMethodO5patchyA2CmF",
+            "mangledName": "$s12NetworkLayer10HTTPMethodO5patchyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "delete",
+            "printedName": "delete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkLayer.HTTPMethod.Type) -> NetworkLayer.HTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkLayer.HTTPMethod",
+                    "usr": "s:12NetworkLayer10HTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkLayer.HTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPMethod",
+                        "printedName": "NetworkLayer.HTTPMethod",
+                        "usr": "s:12NetworkLayer10HTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkLayer10HTTPMethodO6deleteyA2CmF",
+            "mangledName": "$s12NetworkLayer10HTTPMethodO6deleteyA2CmF",
+            "moduleName": "NetworkLayer"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkLayer10HTTPMethodO8rawValueSSvp",
+            "mangledName": "$s12NetworkLayer10HTTPMethodO8rawValueSSvp",
+            "moduleName": "NetworkLayer",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkLayer10HTTPMethodO8rawValueSSvg",
+                "mangledName": "$s12NetworkLayer10HTTPMethodO8rawValueSSvg",
+                "moduleName": "NetworkLayer",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NetworkLayer.HTTPMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPMethod",
+                    "printedName": "NetworkLayer.HTTPMethod",
+                    "usr": "s:12NetworkLayer10HTTPMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkLayer10HTTPMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12NetworkLayer10HTTPMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "NetworkLayer",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12NetworkLayer10HTTPMethodO",
+        "mangledName": "$s12NetworkLayer10HTTPMethodO",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkMonitorProtocol",
+        "printedName": "NetworkMonitorProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startMonitoringNetwork",
+            "printedName": "startMonitoringNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<NetworkLayer.NetworkInfoModel>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInfoModel",
+                    "printedName": "NetworkLayer.NetworkInfoModel",
+                    "usr": "s:12NetworkLayer0A9InfoModelV"
+                  }
+                ],
+                "usr": "s:ScS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A15MonitorProtocolP015startMonitoringA0ScSyAA0A9InfoModelVGyF",
+            "mangledName": "$s12NetworkLayer0A15MonitorProtocolP015startMonitoringA0ScSyAA0A9InfoModelVGyF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.NetworkMonitorProtocol>",
+            "sugared_genericSig": "<Self where Self : NetworkLayer.NetworkMonitorProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startMonitoringNetwork",
+            "printedName": "startMonitoringNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<NetworkLayer.NetworkInfoModel, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInfoModel",
+                    "printedName": "NetworkLayer.NetworkInfoModel",
+                    "usr": "s:12NetworkLayer0A9InfoModelV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A15MonitorProtocolP015startMonitoringA07Combine12AnyPublisherVyAA0A9InfoModelVs5NeverOGyF",
+            "mangledName": "$s12NetworkLayer0A15MonitorProtocolP015startMonitoringA07Combine12AnyPublisherVyAA0A9InfoModelVs5NeverOGyF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.NetworkMonitorProtocol>",
+            "sugared_genericSig": "<Self where Self : NetworkLayer.NetworkMonitorProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopMonitoringNetwork",
+            "printedName": "stopMonitoringNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A15MonitorProtocolP014stopMonitoringA0yyF",
+            "mangledName": "$s12NetworkLayer0A15MonitorProtocolP014stopMonitoringA0yyF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.NetworkMonitorProtocol>",
+            "sugared_genericSig": "<Self where Self : NetworkLayer.NetworkMonitorProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NetworkLayer0A15MonitorProtocolP",
+        "mangledName": "$s12NetworkLayer0A15MonitorProtocolP",
+        "moduleName": "NetworkLayer",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkMonitor",
+        "printedName": "NetworkMonitor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkMonitor",
+                "printedName": "NetworkLayer.NetworkMonitor",
+                "usr": "s:12NetworkLayer0A7MonitorC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkLayer0A7MonitorCACycfc",
+            "mangledName": "$s12NetworkLayer0A7MonitorCACycfc",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startMonitoringNetwork",
+            "printedName": "startMonitoringNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<NetworkLayer.NetworkInfoModel>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInfoModel",
+                    "printedName": "NetworkLayer.NetworkInfoModel",
+                    "usr": "s:12NetworkLayer0A9InfoModelV"
+                  }
+                ],
+                "usr": "s:ScS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A7MonitorC015startMonitoringA0ScSyAA0A9InfoModelVGyF",
+            "mangledName": "$s12NetworkLayer0A7MonitorC015startMonitoringA0ScSyAA0A9InfoModelVGyF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startMonitoringNetwork",
+            "printedName": "startMonitoringNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<NetworkLayer.NetworkInfoModel, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkInfoModel",
+                    "printedName": "NetworkLayer.NetworkInfoModel",
+                    "usr": "s:12NetworkLayer0A9InfoModelV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A7MonitorC015startMonitoringA07Combine12AnyPublisherVyAA0A9InfoModelVs5NeverOGyF",
+            "mangledName": "$s12NetworkLayer0A7MonitorC015startMonitoringA07Combine12AnyPublisherVyAA0A9InfoModelVs5NeverOGyF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopMonitoringNetwork",
+            "printedName": "stopMonitoringNetwork()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer0A7MonitorC014stopMonitoringA0yyF",
+            "mangledName": "$s12NetworkLayer0A7MonitorC014stopMonitoringA0yyF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NetworkLayer0A7MonitorC",
+        "mangledName": "$s12NetworkLayer0A7MonitorC",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "NetworkMonitorProtocol",
+            "printedName": "NetworkMonitorProtocol",
+            "usr": "s:12NetworkLayer0A15MonitorProtocolP",
+            "mangledName": "$s12NetworkLayer0A15MonitorProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ErrorMapperProtocol",
+        "printedName": "ErrorMapperProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "map",
+            "printedName": "map(error:response:isNetworkReachable:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.HTTPURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer19ErrorMapperProtocolP3map5error8response02isA9Reachables0C0_psAH_p_So17NSHTTPURLResponseCSgSbtF",
+            "mangledName": "$s12NetworkLayer19ErrorMapperProtocolP3map5error8response02isA9Reachables0C0_psAH_p_So17NSHTTPURLResponseCSgSbtF",
+            "moduleName": "NetworkLayer",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkLayer.ErrorMapperProtocol>",
+            "sugared_genericSig": "<Self where Self : NetworkLayer.ErrorMapperProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NetworkLayer19ErrorMapperProtocolP",
+        "mangledName": "$s12NetworkLayer19ErrorMapperProtocolP",
+        "moduleName": "NetworkLayer",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ErrorMapper",
+        "printedName": "ErrorMapper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErrorMapper",
+                "printedName": "NetworkLayer.ErrorMapper",
+                "usr": "s:12NetworkLayer11ErrorMapperC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkLayer11ErrorMapperCACycfc",
+            "mangledName": "$s12NetworkLayer11ErrorMapperCACycfc",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "map",
+            "printedName": "map(error:response:isNetworkReachable:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.HTTPURLResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkLayer11ErrorMapperC3map5error8response02isA9Reachables0C0_psAH_p_So17NSHTTPURLResponseCSgSbtF",
+            "mangledName": "$s12NetworkLayer11ErrorMapperC3map5error8response02isA9Reachables0C0_psAH_p_So17NSHTTPURLResponseCSgSbtF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NetworkLayer11ErrorMapperC",
+        "mangledName": "$s12NetworkLayer11ErrorMapperC",
+        "moduleName": "NetworkLayer",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ErrorMapperProtocol",
+            "printedName": "ErrorMapperProtocol",
+            "usr": "s:12NetworkLayer19ErrorMapperProtocolP",
+            "mangledName": "$s12NetworkLayer19ErrorMapperProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InterfaceType",
+        "printedName": "InterfaceType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Network.NWInterface.InterfaceType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InterfaceType",
+                    "printedName": "Network.NWInterface.InterfaceType",
+                    "usr": "s:7Network11NWInterfaceV13InterfaceTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Network11NWInterfaceV13InterfaceTypeO0A5LayerE8allCasesSayAEGvpZ",
+            "mangledName": "$s7Network11NWInterfaceV13InterfaceTypeO0A5LayerE8allCasesSayAEGvpZ",
+            "moduleName": "NetworkLayer",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Network.NWInterface.InterfaceType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InterfaceType",
+                        "printedName": "Network.NWInterface.InterfaceType",
+                        "usr": "s:7Network11NWInterfaceV13InterfaceTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Network11NWInterfaceV13InterfaceTypeO0A5LayerE8allCasesSayAEGvgZ",
+                "mangledName": "$s7Network11NWInterfaceV13InterfaceTypeO0A5LayerE8allCasesSayAEGvgZ",
+                "moduleName": "NetworkLayer",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7Network11NWInterfaceV13InterfaceTypeO",
+        "mangledName": "$s7Network11NWInterfaceV13InterfaceTypeO",
+        "moduleName": "Network",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Network.NWInterface.InterfaceType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InterfaceType",
+                        "printedName": "Network.NWInterface.InterfaceType",
+                        "usr": "s:7Network11NWInterfaceV13InterfaceTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "InvalidHTTPResponseError",
+            "printedName": "InvalidHTTPResponseError",
+            "declKind": "Struct",
+            "usr": "s:So12NSURLSessionC12NetworkLayerE24InvalidHTTPResponseErrorV",
+            "mangledName": "$sSo12NSURLSessionC12NetworkLayerE24InvalidHTTPResponseErrorV",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "publisher",
+            "printedName": "publisher(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<(Foundation.Data, Foundation.HTTPURLResponse), Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data, Foundation.HTTPURLResponse)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPURLResponse",
+                        "printedName": "Foundation.HTTPURLResponse",
+                        "usr": "c:objc(cs)NSHTTPURLResponse"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12NSURLSessionC12NetworkLayerE9publishery7Combine12AnyPublisherVy10Foundation4DataV_So17NSHTTPURLResponseCts5Error_pGAH10URLRequestVF",
+            "mangledName": "$sSo12NSURLSessionC12NetworkLayerE9publishery7Combine12AnyPublisherVy10Foundation4DataV_So17NSHTTPURLResponseCts5Error_pGAH10URLRequestVF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "perform",
+            "printedName": "perform(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.HTTPURLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPURLResponse",
+                    "printedName": "Foundation.HTTPURLResponse",
+                    "usr": "c:objc(cs)NSHTTPURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12NSURLSessionC12NetworkLayerE7performy10Foundation4DataV_So17NSHTTPURLResponseCtAE10URLRequestVYaKF",
+            "mangledName": "$sSo12NSURLSessionC12NetworkLayerE7performy10Foundation4DataV_So17NSHTTPURLResponseCtAE10URLRequestVYaKF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "perform",
+            "printedName": "perform(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12NSURLSessionC12NetworkLayerE7performyy10Foundation10URLRequestVYaKF",
+            "mangledName": "$sSo12NSURLSessionC12NetworkLayerE7performyy10Foundation10URLRequestVYaKF",
+            "moduleName": "NetworkLayer",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "HTTPClient",
+            "printedName": "HTTPClient",
+            "usr": "s:12NetworkLayer10HTTPClientP",
+            "mangledName": "$s12NetworkLayer10HTTPClientP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/EndPoint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 561,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/EndPoint.swift",
+      "kind": "Dictionary",
+      "offset": 734,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/EndPoint.swift",
+      "kind": "Dictionary",
+      "offset": 1556,
+      "length": 75,
+      "value": "[(\"Content-Type\", \"application\/json\"), (\"Accept\", \"application\/json\")]"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/APIHTTPRequestMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 616,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/APIHTTPRequestMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 622,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 558,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3414,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3621,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3672,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/Commom\/Models\/NetworkInfoModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 263,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/Commom\/Models\/NetworkInfoModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 297,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/Commom\/Models\/NetworkInfoModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 333,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 534,
+      "length": 9,
+      "value": "\"No Data\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 593,
+      "length": 18,
+      "value": "\"Unable To Decode\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 736,
+      "length": 36,
+      "value": "\"some problem occured in connection\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 819,
+      "length": 32,
+      "value": "\"some problem occured in server\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 895,
+      "length": 11,
+      "value": "\"out dated\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 954,
+      "length": 24,
+      "value": "\"User is not authorized\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 1023,
+      "length": 22,
+      "value": "\"Request is forbidden\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 1089,
+      "length": 11,
+      "value": "\"not found\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 1173,
+      "length": 39,
+      "value": "\"Response Status code is \""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 1211,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/NetworkError.swift",
+      "kind": "StringLiteral",
+      "offset": 1255,
+      "length": 22,
+      "value": "\"Something went wrong\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 140,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 162,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 184,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 140,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 162,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 184,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/HTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 233,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkMonitor\/NetworkMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 1743,
+      "length": 23,
+      "value": "\"Network_Monitor_Queue\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkMonitor\/NetworkMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2000,
+      "length": 27,
+      "value": "\"NetworkMonitor initiated.\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkMonitor\/NetworkMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 2104,
+      "length": 26,
+      "value": "\"NetworkMonitor deinited.\""
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/ErrorMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 842,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/ErrorMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 913,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/ErrorMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 981,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/ErrorMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1048,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/maryamchrs\/Desktop\/Developer\/NetworkLayer\/Network\/NetworkManager\/ErrorMapper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1054,
+      "length": 3,
+      "value": "600"
+    }
+  ]
+}

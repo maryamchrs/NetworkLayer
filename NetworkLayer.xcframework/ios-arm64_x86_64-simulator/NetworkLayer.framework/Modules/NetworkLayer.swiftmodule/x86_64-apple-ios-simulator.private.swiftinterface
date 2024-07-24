@@ -1,0 +1,161 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetworkLayer
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import Foundation
+import Network
+@_exported import NetworkLayer
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension Network.NWInterface.InterfaceType : Swift.CaseIterable {
+  public static var allCases: [Network.NWInterface.InterfaceType] {
+    get
+  }
+  public typealias AllCases = [Network.NWInterface.InterfaceType]
+}
+public protocol EndPoint {
+  var baseURL: Swift.String { get }
+  var path: Swift.String { get }
+  var httpMethod: NetworkLayer.HTTPMethod { get }
+  var httpHeaders: [Swift.String : Swift.String]? { get }
+  var allHeaders: [Swift.String : Swift.String] { get }
+  var httpBody: (any Swift.Encodable)? { get }
+  var timeoutInterval: Foundation.TimeInterval { get }
+  var cachePolicy: Foundation.URLRequest.CachePolicy { get }
+}
+extension NetworkLayer.EndPoint {
+  public var timeoutInterval: Foundation.TimeInterval {
+    get
+  }
+  public var cachePolicy: Foundation.URLRequest.CachePolicy {
+    get
+  }
+  public var allHeaders: [Swift.String : Swift.String] {
+    get
+  }
+  public var urlRequest: Foundation.URLRequest? {
+    get
+  }
+}
+public protocol RequestMapperProtocol : AnyObject {
+  var jsonDecoder: Foundation.JSONDecoder { get set }
+  func map<T>(data: Foundation.Data, response: Foundation.HTTPURLResponse) throws -> T where T : Swift.Decodable
+}
+public class APIHTTPRequestMapper : NetworkLayer.RequestMapperProtocol {
+  public var jsonDecoder: Foundation.JSONDecoder
+  public init(jsonDecoder: Foundation.JSONDecoder = JSONDecoder())
+  public func map<T>(data: Foundation.Data, response: Foundation.HTTPURLResponse) throws -> T where T : Swift.Decodable
+  @objc deinit
+}
+public enum NetworkInterfaceType : Swift.Sendable {
+  case other
+  case wifi
+  case cellular
+  case wiredEthernet
+  case loopback
+  public static func == (a: NetworkLayer.NetworkInterfaceType, b: NetworkLayer.NetworkInterfaceType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol NetworkManagerProtocol : AnyObject {
+  var isNetworkReachable: Swift.Bool { get }
+  #if compiler(>=5.3) && $AsyncAwait
+  func request<Response>(_ urlRequest: Foundation.URLRequest) async throws -> Response where Response : Swift.Decodable
+  #endif
+  func request<Response>(_ urlRequest: Foundation.URLRequest) -> Combine.AnyPublisher<Response, any Swift.Error> where Response : Swift.Decodable
+}
+final public class NetworkManager {
+  final public var isNetworkReachable: Swift.Bool
+  public init(client: any NetworkLayer.HTTPClient = URLSession.shared, requestMapper: any NetworkLayer.RequestMapperProtocol = APIHTTPRequestMapper(), errorMepper: any NetworkLayer.ErrorMapperProtocol = ErrorMapper())
+  @objc deinit
+}
+extension NetworkLayer.NetworkManager : NetworkLayer.NetworkManagerProtocol {
+  #if compiler(>=5.3) && $AsyncAwait
+  final public func request<Response>(_ urlRequest: Foundation.URLRequest) async throws -> Response where Response : Swift.Decodable
+  #endif
+  final public func request<Response>(_ urlRequest: Foundation.URLRequest) -> Combine.AnyPublisher<Response, any Swift.Error> where Response : Swift.Decodable
+}
+public struct NetworkInfoModel {
+}
+public protocol HTTPClient {
+  func publisher(_ request: Foundation.URLRequest) -> Combine.AnyPublisher<(Foundation.Data, Foundation.HTTPURLResponse), any Swift.Error>
+  #if compiler(>=5.3) && $AsyncAwait
+  func perform(_ request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.HTTPURLResponse)
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func perform(_ request: Foundation.URLRequest) async throws
+  #endif
+}
+extension Foundation.URLSession : NetworkLayer.HTTPClient {
+  public struct InvalidHTTPResponseError : Swift.Error {
+  }
+  public func publisher(_ request: Foundation.URLRequest) -> Combine.AnyPublisher<(Foundation.Data, Foundation.HTTPURLResponse), any Swift.Error>
+  #if compiler(>=5.3) && $AsyncAwait
+  public func perform(_ request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.HTTPURLResponse)
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func perform(_ request: Foundation.URLRequest) async throws
+  #endif
+}
+public enum NetworkError : Swift.Error {
+  case noData
+  case unableToDecode
+  case URLSessionError(Swift.String)
+  case networkConnectionError
+  case serverError
+  case outDated
+  case unauthorized
+  case forbidden
+  case notFound
+  case notAcceptedStatusCode(Swift.Int)
+  case general
+}
+extension NetworkLayer.NetworkError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case patch
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol NetworkMonitorProtocol : AnyObject {
+  func startMonitoringNetwork() -> _Concurrency.AsyncStream<NetworkLayer.NetworkInfoModel>
+  func startMonitoringNetwork() -> Combine.AnyPublisher<NetworkLayer.NetworkInfoModel, Swift.Never>
+  func stopMonitoringNetwork()
+}
+final public class NetworkMonitor {
+  public init()
+  @objc deinit
+}
+extension NetworkLayer.NetworkMonitor : NetworkLayer.NetworkMonitorProtocol {
+  final public func startMonitoringNetwork() -> _Concurrency.AsyncStream<NetworkLayer.NetworkInfoModel>
+  final public func startMonitoringNetwork() -> Combine.AnyPublisher<NetworkLayer.NetworkInfoModel, Swift.Never>
+  final public func stopMonitoringNetwork()
+}
+public protocol ErrorMapperProtocol : AnyObject {
+  func map(error: any Swift.Error, response: Foundation.HTTPURLResponse?, isNetworkReachable: Swift.Bool) -> any Swift.Error
+}
+public class ErrorMapper : NetworkLayer.ErrorMapperProtocol {
+  public init()
+  public func map(error: any Swift.Error, response: Foundation.HTTPURLResponse?, isNetworkReachable: Swift.Bool) -> any Swift.Error
+  @objc deinit
+}
+extension NetworkLayer.NetworkInterfaceType : Swift.Equatable {}
+extension NetworkLayer.NetworkInterfaceType : Swift.Hashable {}
+extension NetworkLayer.HTTPMethod : Swift.Equatable {}
+extension NetworkLayer.HTTPMethod : Swift.Hashable {}
+extension NetworkLayer.HTTPMethod : Swift.RawRepresentable {}
